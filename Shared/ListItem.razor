@@ -1,0 +1,25 @@
+   <div class="ListItem">
+
+    <div class=Icon>
+          <span class="oi oi-pencil mr-2" aria-hidden="true"></span>
+      </div>
+      <div class="Title">
+        <!--<ListItemText primary={props.title} />-->
+         <strong>@Title</strong>
+        <div class="BookingDetails">@BookingDetails</div>
+      </div>
+
+   </div>
+      
+
+
+@code {
+    // Demonstrates how a parent component can supply parameters
+    [Parameter]
+    public string Title { get; set; }
+
+    [Parameter]
+    public string Icon { get; set; }
+    [Parameter]
+    public string BookingDetails { get; set; }
+}

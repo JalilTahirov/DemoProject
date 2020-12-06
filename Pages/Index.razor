@@ -1,7 +1,34 @@
 ﻿@page "/"
 
-<h1>Hello, World!</h1>
-
-Welcome to your new app.
-
 <SurveyPrompt Title="How is Blazor working for you?" />
+
+<br />
+<br />
+<!--
+      <List
+        component="nav"
+        className={classes.List}
+        aria-label="mailbox folders"
+      >
+        {bookingListItem.map((list, index) => (
+          <div key={index}>
+            {index ? <Divider /> : null}
+            <BookingListItem
+              icon={list.icon}
+              title={list.title}
+              clicked={list.link}
+              bookingDetails = {list.bookingDetails}
+            />
+          </div>
+        ))}
+      </List>
+
+
+
+
+-->
+<div class="OnlineBooking">
+   <ListItem Title="Specialist" Icon="icon" BookingDetails="dsdsss ss ss" />
+   <ListItem Title="Date and Time" Icon="icon" BookingDetails="dsds sss sss" />
+</div>
+
